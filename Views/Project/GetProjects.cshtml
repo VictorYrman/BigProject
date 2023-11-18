@@ -1,0 +1,16 @@
+﻿@model List<SiteOfCompany.Domain.Entity.Project>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@foreach(var project in Model)
+{
+    <p>@project.ProjectName</p>
+    <p>@project.ProjectType</p>
+    <p>@project.Employee</p>
+    <p>@project.ProjectTime</p>
+    <p>@project.PriceForProjectTime</p>
+}
+
